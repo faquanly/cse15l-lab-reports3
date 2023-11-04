@@ -53,9 +53,14 @@
    - ![Before: Output of running the test with a failure-inducing input](part1-image1.png)
      - The test is passed eventhougt the code has bug.
    - ![After: Output of running the test WITHOUT a failure-inducing input](part1-image2.png)
-     - The code doesn't 
+     - The code doesn't pass the test since the input was updated.
    - The bug, as the before and after code change required to fix it.
    - 
 3. Part 2 - Researching Commands
-   - I choose the `grep` command.
+   - I chose the `grep` command and use `man grep` command to display the information about `grep` command.
+     - [1] [`grep` command online](https://www.gnu.org/software/grep/manual/grep.html#Command_002dline-Options) ```grep [option] [patterns] [file]```. There can be zero or more `option` argument, zero or more `file` argument. There can be one or more `patterns` arguments seperated by new lines.
+     - [2] Using the command `grep -c` on file
+     - ![](part2-image1.png)
+     - The command means count the letter `a` in the `grep-output1.txt` file.
+     - [3] Using the command `grep -c` on directory.
    - Asking Chat GPT
