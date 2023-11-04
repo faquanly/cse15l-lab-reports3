@@ -79,7 +79,7 @@
        - The `grep -C number` command does not work on the directory.
      - [7] Using command `grep "2001" find-results.txt| grep "research0007" > newOutput.txt` on file.
      - ![](lab3-part2-image7.png)
-       - The command find the line(s) which contains both "2001" and "research0007" in find-result.txt file and print it out to the new file named newOutput.txt. 
+       - The command finds line(s) which contains both "2001" and "research0007" in find-result.txt file and print it out to the new file named newOutput.txt. 
      - [8] Using the command `grep "2001" docsearch/| grep "research0007" > newOutput.txt` on directory.
      - ![](lab3-part2-image8.png)
        - The command does not work on directory.
