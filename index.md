@@ -58,10 +58,30 @@
    - 
 3. Part 2 - Researching Commands
    - I chose the `grep` command and use `man grep` command to display the information about `grep` command.
-     - [1] [`grep` command online](https://www.gnu.org/software/grep/manual/grep.html#Command_002dline-Options) ```grep [option] [patterns] [file]```. There can be zero or more `option` argument, zero or more `file` argument. There can be one or more `patterns` arguments seperated by new lines.
-     - [2] Using the command `grep -c` on file
+     - [`grep` command online](https://www.gnu.org/software/grep/manual/grep.html#Command_002dline-Options) ```grep [option] [patterns] [file]```. There can be zero or more `option` argument, zero or more `file` argument. There can be one or more `patterns` arguments seperated by new lines.
+     - [1] Using the command `grep -c` on file
      - ![](lab3-part2-image1.png)
-     - The command means count the letter `a` in the `grep-output1.txt` file.
-     - [3] Using the command `grep -c` on directory.
+       - The command means count the letter `a` in the `grep-output1.txt` file. The output is 6 which is the number of letter `a` in the file.
+     - [2] Using the command `grep -c` on directory.
      - ![](lab3-part2-image2.png)
+       - The `grep -c` command does not work on the directory.
+     - [3] Using the command `grep -r` on file
+     - ![](lab3-part2-image3.png)
+       - The command means search for "biomed" in `grep-results.txt` file.
+     - [4] Using the command `grep -r` on directory.
+     - ![](lab3-part2-image4.png)
+       - The command means search for "biomed" all files under technical/ directory. The `grep -c` works for both on file and directory.
+     - [5] Using the command `grep -C number` on file: print num lines of leading and trailing output context. 
+     - ![](lab3-part2-image5.png)
+       - The output prints 3 lines after the line contains "io".
+     - [6] Using the command `grep -C number` on directory.
+     - ![](lab3-part2-image6.png)
+       - The `grep -c` command does not work on the directory.
+     - [7] Using the command `grep -C number` does not work on directory.
+     - ![](lab3-part2-image7.png)
+     - [8] Using the command `grep -c` on directory.
+     - ![](lab3-part2-image8.png)
+     - 
+      
+       - - 
    - Asking Chat GPT
