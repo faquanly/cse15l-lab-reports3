@@ -56,7 +56,6 @@
      - The code doesn't pass the test since the input was updated.
    - The bug, as the before and after code change required to fix it.
      - The code BEFORE fixing the bug.
-     - The code AFTER fixing the bug.
        ```
        public class ArrayExamples {
        //Changes the input array to be in reversed order
