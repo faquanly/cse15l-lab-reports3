@@ -58,7 +58,7 @@
    - 
 3. Part 2 - Researching Commands
    - I chose the `grep` command and use `man grep` command to display the information about `grep` command.
-     - [`grep` command online](https://www.gnu.org/software/grep/manual/grep.html#Command_002dline-Options) ```grep [option] [patterns] [file]```. I found this source as a `URL` by searching on google.com. There can be zero or more `option` argument, zero or more `file` argument. There can be one or more `patterns` arguments seperated by new lines.
+     - These `grep` commands was used information from [GBU Grap website](https://www.gnu.org/software/grep/manual/grep.html#Command_002dline-Options) ```grep [option] [patterns] [file]```. I found this source as a `URL` by searching on google.com. There can be zero or more `option` argument, zero or more `file` argument. There can be one or more `patterns` arguments seperated by new lines.
      - [1] Using the command `grep -c` on file
        ![](lab3-part2-image1.png)
        - The command means count the letter `a` in the `grep-output1.txt` file. The output is 6 which is the number of letter `a` in the file.
