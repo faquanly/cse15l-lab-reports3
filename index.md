@@ -55,7 +55,31 @@
      ![After: Output of running the test WITHOUT a failure-inducing input](part1-image2.png)
      - The code doesn't pass the test since the input was updated.
    - The bug, as the before and after code change required to fix it.
-   - 
+     - The code BEFORE fixing the bug.
+     - The code AFTER fixing the bug.
+       ```
+       public class ArrayExamples {
+       //Changes the input array to be in reversed order
+       static void reverseInPlace(int[] arr) {
+       for(int i = 0; i < (arr.length); i += 1) {
+       arr[i] = arr[arr.length - i - 1]; // bug is here
+       }
+       }
+       ```
+       The bug here is when the for loop run, the new elements were added to the original array. After the array run more than a half of the length, the code used the new values of the array, which was reversed from the previous loops and do the reverse again, while it suppose to take the elements from the original array. Therefore, the output was incorrect and it did not pass the test
+     - The code AFTER fixing the bug.
+        ```
+       public class ArrayExamples {
+       //Changes the input array to be in reversed order
+       static void reverseInPlace(int[] arr) {
+       int [] newArray = arr.clone();
+       for(int i = 0; i < (arr.length); i += 1) {
+       arr[i] = newArray[arr.length - i - 1]; // bug is here
+       }
+       }
+       ```
+       ![ReverseInPlace passed the test AFTER fixing the bug](lab3-part1-image3.png)
+       To fix this bug, we copy the original array into the new array and run the reverse orders based on the new array, then write it back to the original array.
 3. Part 2 - Researching Commands
    - I chose the `grep` command and use `man grep` command to display the information about `grep` command.
      - These `grep` commands was used information from [GBU Grap website](https://www.gnu.org/software/grep/manual/grep.html#Command_002dline-Options) 		```grep [option] [patterns] [file]```.
