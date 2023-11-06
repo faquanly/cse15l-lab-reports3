@@ -109,6 +109,3 @@
        - The command does not work on directory.
        - Home directory: `/Users/faqua` and `docsearch/` is the directory in the home directory.
      - 
-      
-       - - 
-   - 
