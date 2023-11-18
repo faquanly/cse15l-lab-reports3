@@ -43,7 +43,12 @@
 	
      ```
      - The failure-inducing inputs are `int[] input1 = { 3 };` in `testReverseInPlace()` and `int[] input1 = { };` in `testReversed()`. When the input with an array of 1 element or no element, the result cannot reflect whether the array is in reversed order or not. Therefore, the code passed the test even though there are bugs in the code.
-   - An input that doesn't induce a failure, as a JUnit test and any associated code.
+   - An input that doesn't induce a failure, as a JUnit test and any associated code:
+     - Wrong failure-inducting input:
+     ```int[] input1 = { 3 };``` (in `testReverseInPlace()`) and
+     	```int[] input1 = { };``` (in `testReversed()`)
+	
+     - The correct input:
      ```
      int[] input1 = { 1, 2, 3, 4, 5};
      
